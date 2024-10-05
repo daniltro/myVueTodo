@@ -8,7 +8,7 @@
         <CardInput @onAddTodo="addTodo"></CardInput>
         <ul class="card-list">
           <div class="list-info">
-            <span> Всего дел: {{ todoList.length }}</span>
+            <span> Всего задач: {{ todoList.length }}</span>
             <span>Выполнено: {{ completedTodos.length }} </span>
           </div>
           <li class="list-item" v-for="item in todoList" :key="item.id">

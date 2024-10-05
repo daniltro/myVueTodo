@@ -1,6 +1,6 @@
 <template>
   <div class="input-container">
-    <input class="title-input" v-model="title" @keydown.enter="handleAddTodo" placeholder="Заголовок" type="text">
+    <input class="title-input" v-model="title" @keydown.enter="handleAddTodo" placeholder="Введите задачу..." type="text">
     <button class="add-button" @click="handleAddTodo">Добавить<img src="../images/add-button-logo.svg" alt=""></button>
   </div>
 </template>
