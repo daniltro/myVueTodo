@@ -24,6 +24,8 @@ import { computed, defineComponent, ref } from 'vue';
 import CardItem from './components/CardItem.vue';
 import CardInput from './components/CardInput.vue';
 import { Todo } from '../types/types'
+import { fetchPets } from './fetchData.ts'
+fetchPets()
 
 export default defineComponent({
   name: 'App',
@@ -58,7 +60,7 @@ export default defineComponent({
     const setDoneTodo = (id: number, status: boolean) => {
       todoList.value = todoList.value.map((el) => {
         if (el.id === id) {
-          el.status = status; 
+          el.status = status;
         }
         return el;
       });
