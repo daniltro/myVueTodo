@@ -24,8 +24,7 @@ import { computed, defineComponent, ref } from 'vue';
 import CardItem from './components/CardItem.vue';
 import CardInput from './components/CardInput.vue';
 import { Todo } from '../types/types'
-import { fetchPets } from './fetchData.ts'
-fetchPets()
+
 
 export default defineComponent({
   name: 'App',
